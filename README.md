@@ -5,7 +5,7 @@ The clean architechture can be broadly divided into four layer :
 -       Domain
 -       Application
 -       Infrastructure     
-![Capture](https://github.com/HqRhn/Clean-Architecture-and-CQRS/assets/141786593/c08aace5-fc99-4ad0-ab37-588a91a0dc0c)
+![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/90a2bb38-b4a8-4b23-b3e5-4a21ed2e7f26)
 
 
 **Presentation Layer**
@@ -24,8 +24,14 @@ Things like Command, Query, Behaviours sits in the application layer.
 Infrastructure layer contains the implementation of external services and connections.
 Implementation of connections to services like database, messaging, email, storage are present in this layer.
 
+**CQRS Flow**
+
+![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/cba9e355-305f-4ef7-9122-dcc874452dcb)
+
+
 **Use of MediaR in this solution**
 mediatR is used in this solution to implement CQRS pattern.
 It is directing Query(read operations) and Commands(Write operations) to respective handlers(present in application layer)
 And these handlers are communicating with infrasture layer for the read/write operations.
-![Capture](https://github.com/HqRhn/Clean-Architecture-and-CQRS/assets/141786593/4aab83a5-a8cc-42ed-a280-55017b39c375)
+![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/237c0852-291c-4138-a9e1-65f26babb8c8)
+
