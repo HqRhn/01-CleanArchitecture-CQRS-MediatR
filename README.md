@@ -25,6 +25,7 @@ Infact, other layers should depend on Domain.
 Infrastructure layer contains the implementation of external services and connections.
 Implementation of connections to services like database, messaging, email, storage are present in this layer.
 
+
 **CQRS Flow**
 
 ![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/cba9e355-305f-4ef7-9122-dcc874452dcb)
@@ -33,6 +34,7 @@ Implementation of connections to services like database, messaging, email, stora
 **Use of MediaR in this solution**
 mediatR is used in this solution to implement CQRS pattern.
 It is directing Query(read operations) and Commands(Write operations) to respective handlers(present in application layer)
-And these handlers are communicating with infrasture layer for the read/write operations.
+And these handlers are communicating with infrastructure layer for the read/write operations.
+
 ![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/237c0852-291c-4138-a9e1-65f26babb8c8)
 
