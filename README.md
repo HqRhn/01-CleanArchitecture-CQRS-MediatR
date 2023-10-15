@@ -2,8 +2,8 @@
 Implementation of Clean Archtecture in .NET6 | CQRS pattern using mediatR
 The clean architechture can be broadly divided into four layer : 
 -       Presentation
--       Domain
 -       Application
+-       Domain
 -       Infrastructure     
 ![Capture](https://github.com/HqRhn/Architecture-Tests/assets/141786593/90a2bb38-b4a8-4b23-b3e5-4a21ed2e7f26)
 
@@ -11,14 +11,15 @@ The clean architechture can be broadly divided into four layer :
 **Presentation Layer**
 This is the entry point of the system and contains the API endpoints, which receives the requests from clients.
 
+**Application Layer**
+Application layer orchestrates the flow of data and operations between the presentation and domain layers. 
+Things like Command, Query, Behaviours sits in the application layer.
+
 **Domain Layer**
 Domain is the core of Clean acrhitecture and contains things like entities, value objects, domain events.
 Domain layer must not refer projects in any other layers in the solution.
 Infact, other layers should depend on Domain.
 
-**Application Layer**
-Application layer orchestrates the flow of data and operations between the presentation and domain layers. 
-Things like Command, Query, Behaviours sits in the application layer.
 
 **Infrastructure Layer**
 Infrastructure layer contains the implementation of external services and connections.
